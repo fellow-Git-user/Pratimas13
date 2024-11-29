@@ -1,0 +1,559 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+
+h1, h2, h3, h4{
+    font-family: "Poppins", serif;
+    font-weight: 700;
+  }
+
+
+body{
+    font-family: "Open Sans", serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: #ffffff;
+    font-size: 11px;
+    margin: 0;
+  }
+
+.container {
+    margin-top: 50px;
+    max-width: 1400px;
+    /* margin-right: auto;
+    margin-left: auto;
+    padding-left: 10px;
+    padding-right: 10px; */
+}
+
+img{
+    width: 100%
+}
+
+a{
+    text-decoration: none;
+}
+
+.hero{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 10px 0px 10px
+}
+
+.hero img{
+    width: 30%;
+}
+
+.button-try-it{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    color: #fbb5db;
+    font-size: 11px;
+    border-radius: 15px;
+    border: 1px solid #fbb5db;
+    box-shadow: 0px 0px 5px 1px #fbb5db;
+    min-width: 90px;
+    max-width: 300px;
+    min-height: 25px;
+    max-height: 80px;
+}
+
+.intro-wrapper{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-top: 100px; 
+}
+
+.intro-wrapper > h1:first-of-type,
+.intro-wrapper > p:first-of-type{
+    padding: 0px 30px 0px 30px
+}
+
+.intro-wrapper h1{
+    font-size: 24px;
+}
+
+.button-get-started{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ff51c1;
+    color: white;
+    font-size: 15px;
+    border-radius: 50px;
+    border: 0px solid #fbb5db;
+    box-shadow: 0px 0px 2px 2px #eff1f0;
+    min-width: 200px;
+    min-height: 40px;
+}
+
+.intro-wrapper a{
+    margin-top: 25px;
+    margin-bottom: 50px;
+}
+
+.intro-wrapper > img:nth-of-type(1){
+    padding: 0px 10px 0px 10px
+}
+
+.numbers-wrapper{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.intro-wrapper img{
+    margin-top: 50px;
+    margin-bottom: 20px;
+    
+}
+
+.numbers-wrapper img:nth-of-type(1){
+    max-width: 30px;
+    margin-bottom: 1px;
+}
+.numbers{
+    font-size: 50px;
+    font-weight: 900;
+}
+
+.numbers-description{
+    font-size: 15px;
+    font-weight: 500;
+    color:#abaeb1
+}
+
+.pros-wrapper{
+    display: flex;
+    flex-direction: column; 
+    gap: 100px;
+    width: 100%;
+    margin-top: 80px;
+    margin-bottom: 100px;
+    
+}
+
+.first-pros-section,
+.second-pros-section,
+.third-pros-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: #f6fbff;
+    
+}
+
+.second-pros-section{
+    background-color: white;
+    margin-bottom: 50px;
+}
+
+.content-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 45px 0px 45px;
+    text-align: center;
+    margin-top: 40px
+}
+
+.image-box{    
+    order: -1;
+    width: 70%;
+}
+.content-box h2{
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+
+.first-pros-section::before{
+    content: '';
+    background: url('https://raw.githubusercontent.com/frontendmentorio/huddle-landing-page-with-curved-sections/2e9d362974e4dd4a21c3f65b1ecd05d5944133bc/images/bg-section-top-mobile-1.svg');
+    background-repeat: no-repeat;
+    height: 100px;
+    width: 100%;
+    z-index: 100000;
+    position: absolute;
+    top: -100px;
+    background-size: 100% 100px;
+    
+}
+
+.first-pros-section::after{
+    content: '';
+    background: url('https://raw.githubusercontent.com/frontendmentorio/huddle-landing-page-with-curved-sections/2e9d362974e4dd4a21c3f65b1ecd05d5944133bc/images/bg-section-bottom-mobile-1.svg');
+    background-repeat: no-repeat;
+    height: 50px;
+    width: 100%;
+    z-index: 100000;
+    position: absolute;
+    bottom: -50px;
+    background-size: 100% 50px;
+    
+}
+
+.third-pros-section::before{
+    content: '';
+    background: url('https://raw.githubusercontent.com/frontendmentorio/huddle-landing-page-with-curved-sections/2e9d362974e4dd4a21c3f65b1ecd05d5944133bc/images/bg-section-top-mobile-2.svg');
+    background-repeat: no-repeat;
+    height: 100px;
+    width: 100%;
+    z-index: 100000;
+    position: absolute;
+    top: -100px;
+    background-size: 100% 100px;
+}
+
+.third-pros-section::after{
+    content: '';
+    background: url('https://raw.githubusercontent.com/frontendmentorio/huddle-landing-page-with-curved-sections/2e9d362974e4dd4a21c3f65b1ecd05d5944133bc/images/bg-section-bottom-mobile-2.svg');
+    background-repeat: no-repeat;
+    height: 50px;
+    width: 100%;
+    z-index: 100000;
+    position: absolute;
+    bottom: -50px;
+    background-size: 100% 50px;
+}
+
+.invitation-part{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-top: 100px;
+    margin-bottom: 200px;
+    gap: 50px;
+}
+
+.invitation-text{
+    font-size: 24px;
+    font-family: "Poppins", serif;
+    font-weight: 700;
+    text-align: center;
+}
+
+footer{
+    background-color: #00252e;
+    color: #ffffff;
+    position: relative;
+}
+
+footer::before{
+    content: '';
+    background: url('https://raw.githubusercontent.com/frontendmentorio/huddle-landing-page-with-curved-sections/2e9d362974e4dd4a21c3f65b1ecd05d5944133bc/images/bg-footer-top-mobile.svg');
+    background-repeat: no-repeat;
+    height: 50px;
+    width: 100%;
+    z-index: 100000;
+    position: absolute;
+    top: -50px;
+    background-size: 100% 50px;
+    
+}
+
+.footer-content-wrapper{
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px;
+    padding-left: 25px;
+    padding-right: 25px;
+    text-align: left;
+    line-height: 1.6;
+}
+
+.newsletter-part{
+    display: flex;
+    flex-direction: column;
+    order: -1;
+    margin-bottom: 30px;
+}
+
+.newsletter-part span{
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.newsletter-part input{
+    width: 320px;
+    height: 50px;
+    border-radius: 10px;
+}
+
+
+.button-subscribe{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ff51c1;
+    color: white;
+    font-size: 15px;
+    border-radius: 10px;
+    border: 0px solid #fbb5db;
+    width: 160px;
+    height: 50px;
+    align-self: flex-end;
+    margin-top: 15px;
+}
+
+.logo-address > img:first-of-type{
+    filter: brightness(0) invert(1);
+    width: 70%;
+}
+
+.logo-address{
+    position: relative;
+}
+.logo-address ul{
+    list-style-type: none;
+}
+
+.logo-address ul li:first-of-type{
+    margin-bottom: 20px;
+    margin-left: 10px;
+}
+
+.logo-address ul li:nth-of-type(2){
+    margin-left: 10px;
+}
+
+
+
+.logo-address ul li:nth-of-type(1)::before{
+    content: '';
+    background: url('https://raw.githubusercontent.com/frontendmentorio/huddle-landing-page-with-curved-sections/2e9d362974e4dd4a21c3f65b1ecd05d5944133bc/images/icon-phone.svg');
+    background-repeat: no-repeat;
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    z-index: 10000;
+    left: 10px;
+    background-size: 20px 20px;
+}
+
+.logo-address ul li:nth-of-type(2)::before{
+    content: '';
+    background: url('https://raw.githubusercontent.com/frontendmentorio/huddle-landing-page-with-curved-sections/2e9d362974e4dd4a21c3f65b1ecd05d5944133bc/images/icon-email.svg');    
+    background-repeat: no-repeat;
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    z-index: 100001;
+    left: 10px;
+    background-size: 20px 20px;
+}
+
+.socials-container{
+    margin: 30px 0px 30px 0px;
+    padding-left: 10px;
+}
+
+.socials-container img:nth-of-type(2){
+    margin: 0px 10px 0px 10px;
+}
+
+.socials-container img{
+    width: 25px;
+    height: 25px;
+    
+}
+
+
+
+
+@media (min-width: 1200px) {
+
+    body{
+        font-size: 17px;
+        margin: 0;
+    }
+
+    .hero img{
+        width: 20%;
+    }
+
+    .intro-wrapper{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-top: 100px;
+    }
+
+    .intro-wrapper h1{
+        font-size: 40px;
+    }
+
+    .numbers-wrapper {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        margin-left: 150px;
+        margin-right: 150px;
+    }
+
+    .numbers{
+        font-size: 88px;
+        font-weight: 900;
+    }
+
+    .numbers-description {
+        font-size: 20px;
+        font-weight: 500;
+        color: #abaeb1;
+        margin-bottom: 150px;
+    }
+
+    .pros-wrapper{
+        display: flex;
+        flex-direction: column;
+        gap: 200px;
+        position: relative;
+    }
+
+    .content-box{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        width: 45%;
+        padding-left: 50px;
+        text-align: left;
+    }
+
+    .image-box{
+        width: 50%;
+    }
+
+    .first-pros-section{
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 50px;
+    }
+
+    .second-pros-section{
+        display: flex;
+        flex-direction: row;
+    }
+
+
+    .third-pros-section{
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 50px;
+        margin-bottom: 100px
+    }
+
+    .first-pros-section::before{
+        content: '';
+        background: url(https://raw.githubusercontent.com/frontendmentorio/huddle-landing-page-with-curved-sections/refs/heads/master/images/bg-section-top-desktop-1.svg);
+        background-repeat: no-repeat;
+        height: 100px;
+        width: 100%;
+        z-index: 100000;
+        position: absolute;
+        top: -100px;
+        background-size: 100% 100px;        
+    }
+    
+    .first-pros-section::after{
+        content: '';
+        background: url(https://raw.githubusercontent.com/frontendmentorio/huddle-landing-page-with-curved-sections/refs/heads/master/images/bg-section-bottom-desktop-1.svg);
+        background-repeat: no-repeat;
+        height: 100px;
+        width: 100%;
+        z-index: 100000;
+        position: absolute;
+        bottom: -100px;
+        background-size: 100% 100px;
+        
+    }
+    
+    .third-pros-section::before{
+        content: '';
+        background: url(https://raw.githubusercontent.com/frontendmentorio/huddle-landing-page-with-curved-sections/refs/heads/master/images/bg-section-top-desktop-2.svg);
+        background-repeat: no-repeat;
+        height: 100px;
+        width: 100%;
+        z-index: 100000;
+        position: absolute;
+        top: -100px;
+        background-size: 100% 100px;
+    }
+    
+    .third-pros-section::after{
+        content: '';
+        background: url(https://raw.githubusercontent.com/frontendmentorio/huddle-landing-page-with-curved-sections/refs/heads/master/images/bg-section-bottom-desktop-2.svg);
+        background-repeat: no-repeat;
+        height: 100px;
+        width: 100%;
+        z-index: 100000;
+        position: absolute;
+        bottom: -100px;
+        background-size: 100% 100px;
+    }
+
+    .invitation-text {
+        font-size: 40px;
+    }
+
+    .button-get-started {
+        font-size: 17px;
+        font-weight: bold;
+        min-width: 390px;
+        min-height: 70px;
+        margin-bottom: 100px;
+    }
+
+    footer::before {
+        height: 150px;
+        top: -150px;
+        background-size: 100% 150px;
+    }
+
+    .logo-address > img:first-of-type {
+        filter: brightness(0) invert(1);
+        width: 40%;
+    }
+
+    .footer-content-wrapper {
+        display: flex;
+        flex-direction: row;
+        text-align: left;
+        line-height: 1.6;
+        flex-wrap: wrap;
+        column-gap: 100px;
+        padding: 0px 100px 100px 100px;
+    }
+
+    .logo-address{
+        width: 40%;
+    }
+
+    .newsletter-part {
+    order: 0;
+    width: 40%;
+    }
+
+    
+
+
+
+
+
+}
